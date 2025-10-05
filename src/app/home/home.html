@@ -1,0 +1,13 @@
+<div *ngIf="toysData">
+    <tr *ngFor="let toy of toysData()">
+        <td><img style="width: 300px; height: autopx;" src="{{toy.slika_url}}" alt=""></td>
+        <td>{{toy.naziv}}</td>
+        <td>{{toy.opis}}</td>
+        <td>{{toy.tip}}</td>
+        <td>{{toy.uzrast}}</td>
+        <td>{{toy.ciljna_grupa}}</td>
+        <td>{{toy.datum_proizvodnje}}</td>
+        <td>{{toy.cena}}</td>
+        <td>{{toy.recenzije.ocena}}</td>
+    </tr>
+</div>

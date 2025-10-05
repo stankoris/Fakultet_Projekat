@@ -1,0 +1,126 @@
+[
+    {
+      "id": 1,
+      "naziv": "Lego City Policijska Stanica",
+      "opis": "Komplet kockica za izgradnju policijske stanice sa vozilima i figurama.",
+      "tip": "slagalica",
+      "uzrast": "6-12",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2023-03-15",
+      "cena": 5999.99,
+      "recenzije": [
+        { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
+      ]
+    },
+    {
+      "id": 2,
+      "naziv": "Barbika Veterinarka",
+      "opis": "Lutka Barbika u ulozi veterinarke sa priborom i životinjama.",
+      "tip": "figura",
+      "uzrast": "4-10",
+      "ciljna_grupa": "devojčica",
+      "datum_proizvodnje": "2022-11-10",
+      "cena": 3499.00,
+      "recenzije": [
+        { "autor": "Milica (dete)", "ocena": 5, "komentar": "Preslatka lutka!" }
+      ]
+    },
+    {
+      "id": 3,
+      "naziv": "Transformers Optimus Prime",
+      "opis": "Figura robota koja se transformiše u kamion.",
+      "tip": "figura",
+      "uzrast": "5-12",
+      "ciljna_grupa": "dečak",
+      "datum_proizvodnje": "2023-01-20",
+      "cena": 4299.50,
+      "recenzije": []
+    },
+    {
+      "id": 4,
+      "naziv": "Puzzle Safari 100 delova",
+      "opis": "Slagalica sa motivima životinja iz džungle.",
+      "tip": "slagalica",
+      "uzrast": "6-10",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2021-09-05",
+      "cena": 899.99,
+      "recenzije": [
+        { "autor": "Jelena (roditelj)", "ocena": 5, "komentar": "Odlična za razvijanje strpljenja." }
+      ]
+    },
+    {
+      "id": 5,
+      "naziv": "Slikovnica - Crvenkapa",
+      "opis": "Ilustrovana slikovnica sa klasičnom bajkom.",
+      "tip": "slikovnica",
+      "uzrast": "3-7",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2020-05-01",
+      "cena": 499.00,
+      "recenzije": [
+        { "autor": "Petar (roditelj)", "ocena": 4, "komentar": "Lepa priča, ali slike su jednostavne." }
+      ]
+    },
+    {
+      "id": 6,
+      "naziv": "Hot Wheels Auto staza",
+      "opis": "Velika trkačka staza za Hot Wheels automobile.",
+      "tip": "igračka staza",
+      "uzrast": "5-12",
+      "ciljna_grupa": "dečak",
+      "datum_proizvodnje": "2023-06-12",
+      "cena": 3199.00,
+      "recenzije": []
+    },
+    {
+      "id": 7,
+      "naziv": "Frozen Elsa Lutka",
+      "opis": "Lutka princeze Elze iz popularnog crtanog filma.",
+      "tip": "figura",
+      "uzrast": "3-9",
+      "ciljna_grupa": "devojčica",
+      "datum_proizvodnje": "2022-08-18",
+      "cena": 2799.00,
+      "recenzije": [
+        { "autor": "Sara (dete)", "ocena": 5, "komentar": "Prelepa je!" }
+      ]
+    },
+    {
+      "id": 8,
+      "naziv": "Drvena kocka za slaganje",
+      "opis": "Edukativna kocka sa oblicima i bojama za najmlađe.",
+      "tip": "edukativna",
+      "uzrast": "2-5",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2021-02-28",
+      "cena": 1599.00,
+      "recenzije": []
+    },
+    {
+      "id": 9,
+      "naziv": "Spiderman Figura",
+      "opis": "Akciona figura Spidermana sa pokretnim zglobovima.",
+      "tip": "karakter",
+      "uzrast": "4-12",
+      "ciljna_grupa": "dečak",
+      "datum_proizvodnje": "2023-05-25",
+      "cena": 2499.00,
+      "recenzije": [
+        { "autor": "Nikola (dete)", "ocena": 5, "komentar": "Moj omiljeni heroj!" }
+      ]
+    },
+    {
+      "id": 10,
+      "naziv": "Kućica za lutke",
+      "opis": "Velika drvena kućica za lutke sa nameštajem.",
+      "tip": "igračka set",
+      "uzrast": "5-12",
+      "ciljna_grupa": "devojčica",
+      "datum_proizvodnje": "2022-03-11",
+      "cena": 7999.00,
+      "recenzije": [
+        { "autor": "Ivana (roditelj)", "ocena": 5, "komentar": "Kvalitetno izrađena, vredna cene." }
+      ]
+    }
+]
