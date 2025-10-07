@@ -14,13 +14,56 @@ img {
     color: rgb(214, 154, 154);
 }
 
-#cartIcon {
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: rgb(231, 231, 231);
+.fa-user, .fa-cart-shopping {
+    margin-left: 0.3rem;
+    font-size: 20px;
+    color: rgb(232, 232, 232);
 }
 
-#cartIcon:hover {
-    color: white;
+.fa-user:hover, .fa-cart-shopping:hover {
+    color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    align-items: center;
+    height: 4rem;
+}
+
+.socialMediaIcons {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.3rem;
+}
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #ffcb93, #ffb499, #fd8b9c, #ff96c0, #ff91dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook {
+    color: blue;
+    margin: 0.3rem;
+}
+.fa-facebook:hover {
+    color: rgb(87, 87, 255);
+}
+
+.fa-youtube {
+    color: red;
+    margin: 0.3rem;
+}
+.fa-youtube:hover {
+    color: rgb(255, 117, 117);
 }

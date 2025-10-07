@@ -29,11 +29,22 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
-    <i id="cartIcon" class="fa-solid fa-cart-shopping"></i>
+    <a href="/login"><i class="fa-solid fa-user"></i></a>
+    <i class="fa-solid fa-cart-shopping"></i>
   </div>
 </nav>
-
-
-
-
+<!-- ********************************************** -->
+<!-- Ovde se zavrsava nav -->
+<!-- ********************************************** -->
 <router-outlet />
+
+<footer  class="bg-body-tertiary text-white py-3" data-bs-theme="dark">
+  <div>
+    &copy; {{year}} {{title()}}
+  </div>
+  <div class="socialMediaIcons">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</footer>
