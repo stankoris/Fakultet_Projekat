@@ -3,11 +3,12 @@ import { AllToysModel } from '../models/allToys.model';
 
 const client = axios.create({
     baseURL: './test.json',
+    validateStatus: (status: number ) => status === 200,
     headers: {
         'Accept': 'application/json',
         'X-name': 'prodavnicaIgracaka2025'
 
-    }
+    }   
 })
 
 export class AllToysService {

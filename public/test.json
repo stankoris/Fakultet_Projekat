@@ -12,5 +12,61 @@
       "recenzije": [
         { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
       ]
+    },
+    {
+      "id": 1,
+      "slika_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdashboard.kingnewswire.com%2Fuploads%2Fthumbnails%2Ftoyhub247com-revolutionizing-the-way-we-shop-for-toys1708045986.jpeg&f=1&nofb=1&ipt=64833f02efcbd9629ee25cbf40337153e838f0713783370380ecfc3d97c4fae4",
+      "naziv": "Lego City Policijska Stanica",
+      "opis": "Komplet kockica za izgradnju policijske stanice sa vozilima i figurama.",
+      "tip": "slagalica",
+      "uzrast": "6-12",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2023-03-15",
+      "cena": 5999.99,
+      "recenzije": [
+        { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
+      ]
+    },
+    {
+      "id": 1,
+      "slika_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdashboard.kingnewswire.com%2Fuploads%2Fthumbnails%2Ftoyhub247com-revolutionizing-the-way-we-shop-for-toys1708045986.jpeg&f=1&nofb=1&ipt=64833f02efcbd9629ee25cbf40337153e838f0713783370380ecfc3d97c4fae4",
+      "naziv": "Lego City Policijska Stanica",
+      "opis": "Komplet kockica za izgradnju policijske stanice sa vozilima i figurama.",
+      "tip": "slagalica",
+      "uzrast": "6-12",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2023-03-15",
+      "cena": 5999.99,
+      "recenzije": [
+        { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
+      ]
+    },
+    {
+      "id": 1,
+      "slika_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdashboard.kingnewswire.com%2Fuploads%2Fthumbnails%2Ftoyhub247com-revolutionizing-the-way-we-shop-for-toys1708045986.jpeg&f=1&nofb=1&ipt=64833f02efcbd9629ee25cbf40337153e838f0713783370380ecfc3d97c4fae4",
+      "naziv": "Lego City Policijska Stanica",
+      "opis": "Komplet kockica za izgradnju policijske stanice sa vozilima i figurama.",
+      "tip": "slagalica",
+      "uzrast": "6-12",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2023-03-15",
+      "cena": 5999.99,
+      "recenzije": [
+        { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
+      ]
+    },
+    {
+      "id": 1,
+      "slika_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdashboard.kingnewswire.com%2Fuploads%2Fthumbnails%2Ftoyhub247com-revolutionizing-the-way-we-shop-for-toys1708045986.jpeg&f=1&nofb=1&ipt=64833f02efcbd9629ee25cbf40337153e838f0713783370380ecfc3d97c4fae4",
+      "naziv": "Lego City Policijska Stanica",
+      "opis": "Komplet kockica za izgradnju policijske stanice sa vozilima i figurama.",
+      "tip": "slagalica",
+      "uzrast": "6-12",
+      "ciljna_grupa": "svi",
+      "datum_proizvodnje": "2023-03-15",
+      "cena": 5999.99,
+      "recenzije": [
+        { "autor": "Marko (roditelj)", "ocena": 5, "komentar": "Odličan set, deca obožavaju." }
+      ]
     }
 ]

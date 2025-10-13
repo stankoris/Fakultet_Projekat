@@ -1,13 +1,37 @@
-<div *ngIf="toysData">
-    <tr *ngFor="let toy of toysData()">
-        <td><img style="width: 300px; height: autopx;" src="{{toy.slika_url}}" alt=""></td>
-        <td>{{toy.naziv}}</td>
-        <td>{{toy.opis}}</td>
-        <td>{{toy.tip}}</td>
-        <td>{{toy.uzrast}}</td>
-        <td>{{toy.ciljna_grupa}}</td>
-        <td>{{toy.datum_proizvodnje}}</td>
-        <td>{{toy.cena}}</td>
-        <td>{{toy.recenzije.ocena}}</td>
-    </tr>
-</div>
+@if(toysData().length > 0) {
+    <div>
+        @for(picture of toysData(); track picture.slika_url) {
+            <img style="width: 300px; height: autopx;" src="{{picture.slika_url}}" alt="">
+        }
+    </div>
+}
+<!-- Simulacija ucitavanja - https://uiball.com/ -->
+@else {
+    <div class="loading">
+        <svg
+            class="container"
+            viewBox="0 0 40 40"
+            height="40"
+            width="40"
+            >
+            <circle 
+                class="track"
+                cx="20" 
+                cy="20" 
+                r="17.5" 
+                pathlength="100" 
+                stroke-width="5px" 
+                fill="none" 
+            />
+            <circle 
+                class="car"
+                cx="20" 
+                cy="20" 
+                r="17.5" 
+                pathlength="100" 
+                stroke-width="5px" 
+                fill="none" 
+            />
+        </svg>
+    </div>
+}
