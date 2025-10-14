@@ -52,3 +52,37 @@
   }
 /* Simulacija ucitavanja - https://uiball.com/ */
 
+.toysContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.toy-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.toy-image:hover {
+  transform: scale(1.03);
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #555;
+}

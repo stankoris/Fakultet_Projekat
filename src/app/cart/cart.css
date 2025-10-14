@@ -1,0 +1,9 @@
+.btnContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.emptyCartText {
+    display: flex;
+    justify-content: center;
+}

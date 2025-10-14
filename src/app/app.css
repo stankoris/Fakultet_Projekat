@@ -8,6 +8,7 @@ img {
     padding-right: 0.5rem;
     height: 60px;
     background-color: aliceblue;
+    margin-bottom: 3rem;
 }
 
 #title {
@@ -33,6 +34,7 @@ footer {
     padding-right: 2rem;
     align-items: center;
     height: 4rem;
+    margin-top: 3rem;
 }
 
 .socialMediaIcons {

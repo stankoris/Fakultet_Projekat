@@ -1,17 +1,17 @@
-@if(toysData().length > 0) {
- <div class="toysContainer">
+@if(toy) {
+    <div class="container">
+        <div class="">
+        <img [src]="'https://toy.pequla.com' + toy.imageUrl">
+        </div>
 
-  <button (click)="previousImage()"><i class="fa-solid fa-circle-left"></i></button>
-
-    <img 
-    [src]="toysData()[index()].imageUrl"
-    alt="Toy picture"
-    class="toy-image"
-    (click)="showToyInformation()"
-  >
-
-  <button (click)="nextImage()"><i class="fa-solid fa-circle-right"></i></button>
-</div>
+        <div>
+            <h2>{{ toy.name }}</h2>
+            <p>{{ toy.description }}</p>
+            <p><strong>Cena:</strong> {{ toy.price }} RSD</p>
+            <button class="btn btn-outline-secondary" (click)="addToCart()"><i class="fa-solid fa-plus"></i> Dodaj u korpu</button>
+        </div>
+    </div>
+ 
 }
 <!-- Simulacija ucitavanja - https://uiball.com/ -->
 @else {

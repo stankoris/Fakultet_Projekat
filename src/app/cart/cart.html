@@ -1,0 +1,40 @@
+<h2><i class="fa-solid fa-cart-shopping"></i> Moja korpa</h2>
+
+<div class="btnContainer">
+    <button class="btn btn-outline-secondary" (click)="cartService.clearCart()">Isprazni korpu</button>
+</div>
+
+@if(!cartService.items().length) {
+<div class="emptyCartText">
+  <h4>Korpa je prazna</h4>
+</div>
+
+}
+
+@else {
+    <table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Type</th>
+            <th scope="col">Age</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (toy of cartService.items(); track toy) {
+            <tr>
+                <td>{{toy.name}}</td>
+                <td>{{toy.description}}</td>
+                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.ageGroup.name}}</td>
+                <td>{{toy.price}}</td>
+                <button (click)="cartService.removeFromCart(toy.toyId)"><i class="fa-solid fa-trash"></i></button>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+
+

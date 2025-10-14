@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { Toy } from '../models/toy.model';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('The Magic Box');
-
   year = new Date().getFullYear();
 }

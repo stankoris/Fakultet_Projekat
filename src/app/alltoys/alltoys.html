@@ -1,17 +1,24 @@
 @if(toysData().length > 0) {
- <div class="toysContainer">
-
-  <button (click)="previousImage()"><i class="fa-solid fa-circle-left"></i></button>
-
-    <img 
-    [src]="toysData()[index()].imageUrl"
-    alt="Toy picture"
-    class="toy-image"
-    (click)="showToyInformation()"
-  >
-
-  <button (click)="nextImage()"><i class="fa-solid fa-circle-right"></i></button>
-</div>
+    <table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col">Age</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (toy of toysData(); track toy) {
+            <tr>
+                <td>{{toy.name}}</td>
+                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.ageGroup.name}}</td>
+                <td>{{toy.price}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
 }
 <!-- Simulacija ucitavanja - https://uiball.com/ -->
 @else {
