@@ -1,3 +1,3 @@
-Stigao si do ucitavanja u home. Testirao si kako se ucitava slika i do sada sve radi kako treba.
+Napravi za telefon nav i footer. Zavrsi signup, about, faq. Ubaci chatbota.
 
-Napravi za telefon nav i footer. Napravio si login. Sledece je signup, about, faq. Nastavi sa predavanjima.
+Procitaj kod i malo prouci kako to sve zaista funkcionise.

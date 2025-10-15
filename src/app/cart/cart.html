@@ -1,6 +1,6 @@
 <h2><i class="fa-solid fa-cart-shopping"></i> Moja korpa</h2>
 
-<div class="btnContainer">
+<div class="emptyBtnContainer">
     <button class="btn btn-outline-secondary" (click)="cartService.clearCart()">Isprazni korpu</button>
 </div>
 
@@ -29,12 +29,17 @@
                 <td>{{toy.description}}</td>
                 <td>{{toy.targetGroup}}</td>
                 <td>{{toy.ageGroup.name}}</td>
-                <td>{{toy.price}}</td>
-                <button (click)="cartService.removeFromCart(toy.toyId)"><i class="fa-solid fa-trash"></i></button>
+                <td>{{toy.price}} RSD</td>
+                <td>
+                    <button class="btn btn-outline-secondary" (click)="cartService.removeFromCart(toy.toyId)"><i class="fa-solid fa-trash"></i></button>
+                </td>   
             </tr>
         }
     </tbody>
 </table>
 }
 
+<div class="total">
+  <strong>Ukupno: {{cartService.TotalPrice()}} RSD</strong>
+</div>
 

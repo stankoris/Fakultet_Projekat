@@ -20,25 +20,23 @@ export class Home {
     }
 
     nextImage() {
-    const data = this.toysData();
-    const next = (this.index() + 1) % data.length;
-    this.index.set(next);
+      const data = this.toysData();
+      const next = (this.index() + 1) % data.length;
+      this.index.set(next);
+    }
+
+    previousImage() {
+      const data = this.toysData();
+      const previous = (this.index() - 1 + data.length) % data.length;
+      this.index.set(previous);
+    } 
+
+    showToyInformation() {
+    const toy = this.toysData()[this.index()];
+    this.router.navigate(['/toy', toy.toyId]);
   }
 
-  previousImage() {
-    const data = this.toysData();
-    const previous = (this.index() - 1 + data.length) % data.length;
-    this.index.set(previous);
-  } 
-
-
-  showToyInformation() {
-  const toy = this.toysData()[this.index()];
-  this.router.navigate(['/toy', toy.toyId]);
-}
-
-ngOnInit() {
-  setInterval(() => this.nextImage(), 3000);
-}
-
+  ngOnInit() {
+    setInterval(() => this.nextImage(), 12000);
+  }
 }

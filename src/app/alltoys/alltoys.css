@@ -1,0 +1,10 @@
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    width: 70%;
+}
+
+.input-group {
+    width: 93%;
+}

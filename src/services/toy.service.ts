@@ -13,19 +13,14 @@ const client = axios.create({
 
 export class ToyService {
   
+  // funkcija koja vraca sve igracke (objekte)
   static async getAllToys() {
           return await client.get<Toy[]>('api/toy');  
       }
     
-  static async getToysPictures(): Promise<string[]> {
-  const response = await client.get<Toy[]>('api/toy');
-  const toys = response.data;
-  return toys.map(toy => `https://toy.pequla.com${toy.imageUrl}`);
-}
-
-
-  static async getToysPicturesIDs(): Promise<{ toyId: number; imageUrl: string }[]> {
-  const response = await client.get<Toy[]>('api/toy');
+  // funkcija koja vraca samo id i imageurl
+  static async getToysPicturesIDs() {
+  const response = await this.getAllToys();
   const toys = response.data;
   return toys.map(toy => ({
     toyId: toy.toyId,

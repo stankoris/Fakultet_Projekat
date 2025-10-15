@@ -10,4 +10,8 @@ import { CartService } from '../../services/cart.service';
 })
 export class Cart {
   constructor(public cartService: CartService) {}
+
+  totalPrice(): number {
+    return this.cartService.TotalPrice();
+  }
 }

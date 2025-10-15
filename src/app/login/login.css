@@ -6,7 +6,7 @@
 .login-box {
   width: 100%;
   max-width: 400px;
-  background-color: #ffffff;
+  background-color: #ffffffd3;
   color: #333;
 }
 
@@ -35,4 +35,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.register a {
+  color: blue;
+  cursor: pointer;
 }

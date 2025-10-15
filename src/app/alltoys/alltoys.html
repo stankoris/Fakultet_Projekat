@@ -1,3 +1,13 @@
+<div class="input-group flex-nowrap">
+  <input
+    type="text" 
+    [(ngModel)]="search" 
+    (input)="searchToys(search)"
+    placeholder="Pretraži igračke..."
+    class="form-control"
+    >
+</div>
+
 @if(toysData().length > 0) {
     <table class="table table-striped">
     <thead class="table-dark">
@@ -9,12 +19,16 @@
         </tr>
     </thead>
     <tbody>
-        @for (toy of toysData(); track toy) {
+        @for (toy of filterToys(); track toy) {
             <tr>
                 <td>{{toy.name}}</td>
                 <td>{{toy.targetGroup}}</td>
                 <td>{{toy.ageGroup.name}}</td>
                 <td>{{toy.price}}</td>
+                <td class="buttons">
+                <button (click)="showToyInformation()" class="btn btn-outline-secondary" (click)="addToCart(toy)"><i class="fa-solid fa-circle-info"></i></button>
+                <button class="btn btn-outline-secondary" (click)="addToCart(toy)"><i class="fa-solid fa-cart-plus"></i></button>
+                </td>
             </tr>
         }
     </tbody>

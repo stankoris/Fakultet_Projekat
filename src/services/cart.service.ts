@@ -26,4 +26,8 @@ export class CartService {
   clearCart() {
     this.cartItems.set([]);
   }
+
+  TotalPrice(): number {
+    return this.cartItems().reduce((total, toy) => total + toy.price, 0);
+  }
 }
