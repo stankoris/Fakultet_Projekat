@@ -1,10 +1,10 @@
 <h2><i class="fa-solid fa-cart-shopping"></i> Moja korpa</h2>
 
 <div class="emptyBtnContainer">
-    <button class="btn btn-outline-secondary" (click)="cartService.clearCart()">Isprazni korpu</button>
+    <button class="btn btn-outline-secondary" (click)="cartService.emptyCart()">Isprazni korpu</button>
 </div>
 
-@if(!cartService.items().length) {
+@if(!cartService.toys().length) {
 <div class="emptyCartText">
   <h4>Korpa je prazna</h4>
 </div>
@@ -15,20 +15,24 @@
     <table class="table table-striped">
     <thead class="table-dark">
         <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Type</th>
-            <th scope="col">Age</th>
+            <th scope="col">Naziv</th>
+            <th scope="col">Opis</th>
+            <th scope="col">Tip</th>
+            <th scope="col">Uzrast</th>
+            <th scope="col">Ciljna grupa</th>
+             <th scope="col">Datum proizvodnje</th>
             <th scope="col">Price</th>
         </tr>
     </thead>
     <tbody>
-        @for (toy of cartService.items(); track toy) {
+        @for (toy of cartService.toys(); track toy) {
             <tr>
                 <td>{{toy.name}}</td>
                 <td>{{toy.description}}</td>
-                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.type.name}}</td>
                 <td>{{toy.ageGroup.name}}</td>
+                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.productionDate}}</td>
                 <td>{{toy.price}} RSD</td>
                 <td>
                     <button class="btn btn-outline-secondary" (click)="cartService.removeFromCart(toy.toyId)"><i class="fa-solid fa-trash"></i></button>
@@ -39,7 +43,7 @@
 </table>
 }
 
-<div class="total">
-  <strong>Ukupno: {{cartService.TotalPrice()}} RSD</strong>
+<div>
+  <strong>Ukupno: {{cartService.totalPrice()}} RSD</strong>
 </div>
 

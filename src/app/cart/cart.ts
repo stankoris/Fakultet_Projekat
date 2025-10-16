@@ -12,6 +12,9 @@ export class Cart {
   constructor(public cartService: CartService) {}
 
   totalPrice(): number {
-    return this.cartService.TotalPrice();
+    return this.cartService.totalPrice();
   }
+
+
+  
 }

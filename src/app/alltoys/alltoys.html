@@ -12,19 +12,23 @@
     <table class="table table-striped">
     <thead class="table-dark">
         <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Type</th>
-            <th scope="col">Age</th>
-            <th scope="col">Price</th>
+            <th scope="col">Naziv</th>
+            <th scope="col">Opis</th>
+            <th scope="col">Tip</th>
+            <th scope="col">Uzrast</th>
+            <th scope="col">Ciljna grupa</th>
+            <th scope="col">Cena</th>
         </tr>
     </thead>
     <tbody>
         @for (toy of filterToys(); track toy) {
             <tr>
                 <td>{{toy.name}}</td>
-                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.description}}</td>
+                <td>{{toy.type.name}}</td>
                 <td>{{toy.ageGroup.name}}</td>
-                <td>{{toy.price}}</td>
+                <td>{{toy.targetGroup}}</td>
+                <td>{{toy.price}} RSD</td>
                 <td class="buttons">
                 <button (click)="showToyInformation()" class="btn btn-outline-secondary" (click)="addToCart(toy)"><i class="fa-solid fa-circle-info"></i></button>
                 <button class="btn btn-outline-secondary" (click)="addToCart(toy)"><i class="fa-solid fa-cart-plus"></i></button>

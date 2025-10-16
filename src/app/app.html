@@ -2,10 +2,13 @@
   <div class="container-fluid">
         <a id="title" class="navbar-brand" routerLink="/home"><img src="./navPicture.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-list"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="/alltoys">All Toys</a>
         </li>
@@ -24,9 +27,9 @@
           </ul>
         </li>
       </ul>
+          <i routerLink="/login" class="fa-solid fa-user"></i>
+          <i routerLink="/cart" class="fa-solid fa-cart-shopping"></i>
     </div>
-    <a routerLink="/login"><i class="fa-solid fa-user"></i></a>
-    <i routerLink="/cart" class="fa-solid fa-cart-shopping"></i>
   </div>
 </nav>
 <!-- ********************************************** -->

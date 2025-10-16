@@ -44,7 +44,8 @@ export class Alltoys {
   }
 
   addToCart(toy: Toy) {
-    this.cartService.addToCart(toy); // Poziv preko instance
+    // toy.status = "arrived";
+    this.cartService.addToCart(toy);
     alert(`${toy.name} je dodata u korpu`);
   }
 
@@ -52,5 +53,4 @@ export class Alltoys {
     const toy = this.toysData()[this.index()];
     this.router.navigate(['/toy', toy.toyId]);
   }
-
 }

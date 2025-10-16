@@ -15,6 +15,21 @@ img {
     color: rgb(214, 154, 154);
 }
 
+@media screen and (max-width: 990px)  {
+    #title {
+        display: none;
+    }
+
+     .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        position: static;
+        left: 1rem;
+    }
+}
+
 .fa-user, .fa-cart-shopping {
     margin-left: 0.3rem;
     font-size: 20px;
@@ -35,6 +50,22 @@ footer {
     align-items: center;
     height: 4rem;
     margin-top: 3rem;
+}
+
+@media screen and (max-width: 470px)  {
+    footer {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: auto;
+        position: absolute;
+        left: 1rem;
+    }
 }
 
 .socialMediaIcons {

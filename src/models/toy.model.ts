@@ -12,4 +12,5 @@ export interface Toy {
   imageUrl: string;
   ageGroup: AgeGroup;
   type: ToyType;
+  // status: 'reserved' | 'arrived' | 'cancelled';
 }
