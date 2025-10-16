@@ -1,3 +1,1 @@
 Napravi za telefon nav i footer. Zavrsi signup, about, faq. Ubaci chatbota.
-
-Procitaj kod i malo prouci kako to sve zaista funkcionise.
