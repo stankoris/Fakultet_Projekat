@@ -32,5 +32,4 @@ export class ToyInformations implements OnInit {
       alert(`${this.toy.name} je dodata u korpu`);
     }
   }
-
 }

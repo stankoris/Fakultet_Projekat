@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { Toy } from '../models/toy.model';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +11,11 @@ import { Toy } from '../models/toy.model';
 export class App {
   protected readonly title = signal('The Magic Box');
   year = new Date().getFullYear();
+
+  constructor(public service: UserService) {}
+
+  logout() {
+  return this.service.logout();
+}
+
 }

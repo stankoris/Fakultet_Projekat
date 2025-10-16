@@ -7,11 +7,11 @@
         <div>
             <h2>{{ toy.name }}</h2>
             <p>{{ toy.description }}</p>
+            <p>{{toy.type.description}}</p>
             <p><strong>Cena:</strong> {{ toy.price }} RSD</p>
             <button class="btn btn-outline-secondary" (click)="addToCart()"><i class="fa-solid fa-cart-plus"></i> Dodaj u korpu</button>
         </div>
     </div>
- 
 }
 <!-- Simulacija ucitavanja - https://uiball.com/ -->
 @else {

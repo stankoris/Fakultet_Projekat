@@ -1,36 +1,34 @@
-<div class="login-wrapper d-flex align-items-center justify-content-center">
-  <div class="login-box p-4 rounded shadow-lg">
-    <h2 class="text-center mb-4">Prijava</h2>
+<div class="login-box p-4 rounded shadow-lg">
+<h2 class="text-center mb-4">Prijava</h2>
 
-    <form>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email adresa</label>
-        <input
-          type="email"
-          id="email"
-          class="form-control"
-          placeholder="Unesite email"
-        />
-      </div>
+<form>
+    <div class="mb-3">
+    <label for="username" class="form-label">Korisničko ime</label>
+    <input
+        type="username"
+        id="username"
+        class="form-control"
+        placeholder="Unesite korisničko ime"
+    />
+    </div>
 
-      <div class="mb-3">
-        <label for="password" class="form-label">Lozinka</label>
-        <input
-          type="password"
-          id="password"
-          class="form-control"
-          placeholder="Unesite lozinku"
-        />
-      </div>
+    <div class="mb-3">
+    <label for="password" class="form-label">Lozinka</label>
+    <input
+        type="password"
+        id="password"
+        class="form-control"
+        placeholder="Unesite lozinku"
+    />
+    </div>
 
-      <button type="submit" class="btn btn-dark w-100">
-        Prijavi se
-      </button>
+    <button routerLink="/profile" (click)="login()" class="btn btn-primary">
+    Prijavi se
+    </button>
 
-      <p class="register text-center mt-3 mb-0">
-        Nemaš nalog?
-        <a routerLink="/register">Registruj se</a>
-      </p>
-    </form>
-  </div>
+    <p class="signup text-center mt-3 mb-0">
+    Nemaš nalog?
+    <a routerLink="/signup">Registruj se</a>
+    </p>
+</form>
 </div>

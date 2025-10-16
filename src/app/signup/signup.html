@@ -1,0 +1,52 @@
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="name" class="form-label">Ime</label>
+    <input type="text" class="form-control" id="name" placeholder="Unesite ime" required>
+  </div>
+  <div class="col-md-4">
+    <label for="surname" class="form-label">Preyime</label>
+    <input type="text" class="form-control" id="surname" placeholder="Unesite prezime" required>
+  </div>
+  <div class="col-md-4">
+    <label for="username" class="form-label">Korisničko ime</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="city" class="form-label">Grad</label>
+    <input type="text" class="form-control" id="city">
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">Država</label>
+    <select class="form-select" id="validationCustom04" required>
+    <option selected disabled value="">Izaberi...</option>
+        <option>Srbija</option>
+        <option>Nemačka</option>
+        <option>USA</option>
+        <option>Francuska</option>
+        <option>Italija</option>
+        <option>Španija</option>
+        <option>Velika Britanija</option>
+        <option>Rusija</option>
+        <option>Kina</option>
+        <option>Japan</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="password" class="form-label">Lozinka</label>
+    <input type="password" class="form-control" id="password" required>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Prihvatam uslove korišćenja
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button routerLink="/login" class="btn btn-primary" type="submit">Registruj se</button>
+  </div>
+</form>

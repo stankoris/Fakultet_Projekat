@@ -14,7 +14,4 @@ export class Cart {
   totalPrice(): number {
     return this.cartService.totalPrice();
   }
-
-
-  
 }

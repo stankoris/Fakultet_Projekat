@@ -49,8 +49,7 @@ export class Alltoys {
     alert(`${toy.name} je dodata u korpu`);
   }
 
-  showToyInformation() {
-    const toy = this.toysData()[this.index()];
+    showToyInformation(toy: Toy) {
     this.router.navigate(['/toy', toy.toyId]);
   }
 }

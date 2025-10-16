@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "username": "john_doe",
+    "password": "password123",
+    "profile": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "username": "john_doe",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
+  },
+  {
+    "id": 2,
+    "username": "jane_smith",
+    "password": "test123",
+    "profile": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "username": "jane_smith",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90210"
+    }
+  }
+]
