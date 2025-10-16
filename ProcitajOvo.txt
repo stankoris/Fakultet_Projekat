@@ -1,1 +1,2 @@
 Napravi za telefon nav i footer. Zavrsi signup, about, faq. Ubaci chatbota.
+
